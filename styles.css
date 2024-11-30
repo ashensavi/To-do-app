@@ -85,30 +85,30 @@ body {
 #row-task{
     display: flex;
     flex-wrap: wrap;
-    gap: 1px; /* Adjust this value as needed */
+    gap: 1px; 
 }
 .card{
-    margin: 1px !important; /* Reduce or remove extra margin */
+    margin: 1px !important; 
 }
 
 .col{
-    padding: 4px; /* Reduce padding */
+    padding: 4px; 
 }
 
 input {
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333; 
     color: white;
-    border: 1px solid #ccc; /* Add a border for clarity */
+    border: 1px solid #ccc; 
     padding: 10px;
-    width: 100%; /* Adjust width for responsiveness */
-    max-width: 400px; /* Limit maximum width */
-    border-radius: 5px; /* Optional: rounded corners */
+    width: 100%; 
+    max-width: 400px;
+    border-radius: 5px; 
     outline: none;
     font-size: 1em;
     transition: all 0.3s ease;
 }
 input:focus {
-    border-color: #1abc9c; /* Highlight on focus */
+    border-color: #1abc9c; 
     box-shadow: 0 0 5px #1abc9c;
     padding-bottom: 10px;
 }
@@ -117,7 +117,7 @@ input:focus + .line:after {
 }
 .field {
     position: relative;
-    margin-left: 10%; /* Instead of position relative and left */
+    margin-left: 10%; 
 }
 .field .line {
     width: 100%;
@@ -138,19 +138,19 @@ input:focus + .line:after {
 }
 
 .input-task {
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333; 
     color: white;
-    border: 1px solid #ccc; /* Add a border for clarity */
+    border: 1px solid #ccc; 
     padding: 10px;
-    width: 100%; /* Adjust width for responsiveness */
-    max-width: 400px; /* Limit maximum width */
-    border-radius: 5px; /* Optional: rounded corners */
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 5px;
     outline: none;
     font-size: 1em;
     transition: all 0.3s ease;
 }
 .input-task:focus {
-    border-color: #1abc9c; /* Highlight on focus */
+    border-color: #1abc9c; 
     box-shadow: 0 0 5px #1abc9c;
     padding-bottom: 10px;
 }

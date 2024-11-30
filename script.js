@@ -33,13 +33,12 @@ function handleAddTask() {
 }
 function isClicked(button) {
     let card = button.closest('.card');
-    let taskIndex = Array.from(card.parentNode.children).indexOf(card); // Get index based on card position
+    let taskIndex = Array.from(card.parentNode.children).indexOf(card); 
     let statusLabel = card.querySelector('.task-status');
 
-    // Update task status in the array
+
     taskArr[taskIndex].taskStatus = "Done";
 
-    // Update the UI
     statusLabel.textContent = "Done";
     statusLabel.style.backgroundColor = "green";
     statusLabel.style.color = "white";
