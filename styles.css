@@ -73,11 +73,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    letter-spacing: 0.2cap;
     background: #282828;
     border: none;
     border-radius: 30px;
     box-shadow: 0 0 20px #00eaff, 0 0 30px #00eaff, 0 0 40px #00eaff;
-    text-shadow: 0 0 10px #00eaff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -98,18 +98,20 @@ body {
 
 
 .btn-markasdone {
-
+    position: relative;
+    margin-top: 34%;
     display: flex;
     align-items: center;
     padding: 15px 20px;
     font-size: 10px;
+    letter-spacing: 0.2cap;
     font-weight: bold;
     color: #fff;
     background: #282828;
     border: none;
     border-radius: 30px;
     box-shadow: 0 0 20px #13a822, 0 0 30px #13a822, 0 0 40px #13a822;
-    text-shadow: 0 0 10px #13a822;
+   
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -131,6 +133,8 @@ body {
 
 
 .btn-delete-task {
+    position: relative;
+    margin-top: 38%;
     display: flex;
     align-items: center;
     padding: 15px 20px;
@@ -139,9 +143,10 @@ body {
     color: #fff;
     background: #282828;
     border: none;
+    letter-spacing: 0.2cap;
     border-radius: 30px;
     box-shadow: 0 0 20px #b0110e, 0 0 30px #b0110e, 0 0 40px #b0110e;
-    text-shadow: 0 0 10px #b0110e;
+  
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -158,5 +163,6 @@ body {
 .btn-delete-task:hover {
     box-shadow: 0 0 30px #b0110e, 0 0 40px #b0110e, 0 0 50px #b0110e;
 }
+
 
 
