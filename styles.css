@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+h1{
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #212529 !important;
+}
+.main-container{
+    margin-top: 8%;
+    height: 560px;
+    width: 70%;
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+}
+.task-container{
+    top: 7%;
+    height: 300px;
+    width: 90%  ;
+    border: 2px solid blue;
+    position: relative;
+    overflow: scroll;
+}
+.bottom-container{
+    height: 100px;
+    width:100%;
+    border: 2px solid green;
+    position: relative;
+    top: 10%;
+    background-color: black;
+}
+.task{
+    width: 300px;
+    position: relative;
+    left: 4%;
+    bottom: 4%;
+
+}
+.task-description{
+    position: relative;
+    margin-top: 2%;
+    left: 10%;
+ 
+}
+.btn-add-task{
+    position: relative;
+    left: 20%;
+    margin-bottom:4%;
+}
+
+.btn-markasdone{
+    width:130px;
+  
+
+}
+.btn-delete-task{
+    width: 130px;
+}
+
+.btn-markasdone:hover{
+    background-color: chocolate !important;
+    transition: 0.5s;
+    
+}
