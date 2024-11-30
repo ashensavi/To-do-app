@@ -21,6 +21,11 @@ function handleAddTask() {
         alert('Please Enter a Task Name!');
         return;
     }
+
+    if(taskArr.length>3){
+
+        document.getElementById('scrollmsg').innerHTML='Scroll Down For More!';
+    }
     
 
    

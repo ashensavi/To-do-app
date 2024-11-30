@@ -28,6 +28,37 @@ body {
     background-color: grey;
 
 }
+.scrollmsg{
+    position: relative;
+    top: 4%;
+    color:#1abc9c;
+    background-color: #333;
+}
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 3s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 30%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
 
 .task-container {
     top: 7%;
@@ -45,24 +76,113 @@ body {
     border: 2px solid green;
     position: relative;
     top: 10%;
-    background-color: black;
+    background-color: black ;
     display: flex;
     align-items: center;
 }
 
-.task {
-    width: 300px;
-    position: relative;
-    left: 4%;
-    /* bottom: 4%; */
-
+#row-task{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Adjust this value as needed */
+}
+.card{
+    margin: 1px !important; /* Reduce or remove extra margin */
 }
 
-.task-description {
-    position: relative;
-    left: 10%;
-
+.col{
+    padding: 4px; /* Reduce padding */
 }
+
+input {
+    background-color: #333; /* Dark background for contrast */
+    color: white;
+    border: 1px solid #ccc; /* Add a border for clarity */
+    padding: 10px;
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Limit maximum width */
+    border-radius: 5px; /* Optional: rounded corners */
+    outline: none;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+input:focus {
+    border-color: #1abc9c; /* Highlight on focus */
+    box-shadow: 0 0 5px #1abc9c;
+    padding-bottom: 10px;
+}
+input:focus + .line:after {
+    transform: scaleX(1);
+}
+.field {
+    position: relative;
+    margin-left: 10%; /* Instead of position relative and left */
+}
+.field .line {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    background: #bdc3c7;
+}
+.field .line:after {
+    content: " ";
+    position: absolute;
+    float: right;
+    width: 100%;
+    height: 3px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+    background: #1abc9c;
+}
+
+.input-task {
+    background-color: #333; /* Dark background for contrast */
+    color: white;
+    border: 1px solid #ccc; /* Add a border for clarity */
+    padding: 10px;
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Limit maximum width */
+    border-radius: 5px; /* Optional: rounded corners */
+    outline: none;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+.input-task:focus {
+    border-color: #1abc9c; /* Highlight on focus */
+    box-shadow: 0 0 5px #1abc9c;
+    padding-bottom: 10px;
+}
+.input-task:focus + .line-task:after {
+    transform: scaleX(1);
+}
+.field-task {
+    position: relative;
+    left: 5%;
+
+    
+}
+.field-task .line-task {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    background: #bdc3c7;
+    position: relative;
+    
+}
+.field-task .line-task:after {
+    content: " ";
+    position: absolute;
+    float: right;
+    width: 100%;
+    height: 3px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+    background: #1abc9c;
+}
+
+
 
 .btn-add-task {
     position: relative;

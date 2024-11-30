@@ -15,17 +15,29 @@
 
     <div class="main-container">
         <h1 class=" fw-bold">Task Organizer</h1>
+        <h2 class="cursor typewriter-animation scrollmsg" id="scrollmsg"></h2>
+        
         <div class="task-container">
             <div class="container text-center">
-                <div class="row" id="row-task">
+                <div class="row g-0" id="row-task">
 
 
                 </div>
             </div>
         </div>
         <div class="bottom-container">
-            <input type="text" class="task bg-primary-subtle" id="task-name" placeholder="Enter Task Name">
-            <textarea class="task-description bg-warning-subtle" id="task-desc" placeholder="Enter a description"></textarea>
+            <div class="field-task">
+                <input class="input-task" type="text" placeholder="Enter Task Name" id="task-name"/>
+                <div class="line-task">
+
+                </div>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter a description" id="task-desc"/>
+                <div class="line">
+
+                </div>
+            </div>
 
             <button class="btn-add-task" id="add-task" onclick="handleAddTask()">Add Task</button>
 
