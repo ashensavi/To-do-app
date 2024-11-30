@@ -38,15 +38,15 @@ function displayTasks(){
         <div class="col">
             <div class="card" style="width: 18rem;">
                 <div class="card-body bg-black text-white">
-                    <h5 class="card-title">${taskObj.taskName}</h5>
-                    <p class="card-text">${taskObj.description}</p>
+                    <h5 class="card-title">Task : ${taskObj.taskName}</h5>
+                    <p class="card-text">Description : ${taskObj.description}</p>
                     <span class="task-status" style="background-color: #ffc107;">${taskObj.taskStatus}</span>
                     <div class="row">
                      <div class="col">
-                        <button class="btn-markasdone btn btn-success" onclick="isClicked(this)">Mark as Done</button>
+                        <button class="btn-markasdone" onclick="isClicked(this)">Mark as Done</button>
                         </div>
                          <div class="col">
-                        <button class="btn-delete-task btn btn-danger" onclick="deleteTask(${index})">Delete Task</button>
+                        <button class="btn-delete-task" onclick="deleteTask(${index})">Delete Task</button>
                         </div>
                         <audio src="audio/added-task.mp3" autoplay></audio>
                         

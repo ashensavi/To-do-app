@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 
-h1{
+h1 {
     font-family: "Edu AU VIC WA NT Arrows", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: white !important ;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white !important;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     background-color: #212529 !important;
     background-image: url("img/ocean.jpg");
 }
-.main-container{
+
+.main-container {
     margin-top: 8%;
     height: 560px;
     width: 70%;
@@ -26,18 +28,20 @@ body{
     background-color: grey;
 
 }
-.task-container{
+
+.task-container {
     top: 7%;
     height: 300px;
-    width: 90%  ;
+    width: 90%;
     border: 2px solid blue;
     position: relative;
     overflow: scroll;
     background-color: white;
 }
-.bottom-container{
+
+.bottom-container {
     height: 100px;
-    width:100%;
+    width: 100%;
     border: 2px solid green;
     position: relative;
     top: 10%;
@@ -45,35 +49,114 @@ body{
     display: flex;
     align-items: center;
 }
-.task{
+
+.task {
     width: 300px;
     position: relative;
     left: 4%;
     /* bottom: 4%; */
 
 }
-.task-description{
+
+.task-description {
     position: relative;
     left: 10%;
- 
+
 }
-.btn-add-task{
+
+.btn-add-task {
     position: relative;
     left: 20%;
-    
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #282828;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #00eaff, 0 0 30px #00eaff, 0 0 40px #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.btn-markasdone{
-    width:130px;
-  
-
-}
-.btn-delete-task{
-    width: 130px;
+.neon-glow-button i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
 }
 
-.btn-markasdone:hover{
-    background-color: chocolate !important;
-    transition: 0.5s;
-    
+.btn-add-task:hover i {
+    transform: scale(1.2);
 }
+
+.btn-add-task:hover {
+    box-shadow: 0 0 30px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff;
+}
+
+
+
+.btn-markasdone {
+
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #282828;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #13a822, 0 0 30px #13a822, 0 0 40px #13a822;
+    text-shadow: 0 0 10px #13a822;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neon-glow-button i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-markasdone:hover i {
+    transform: scale(1.2);
+}
+
+.btn-markasdone:hover {
+    box-shadow: 0 0 30px #13a822, 0 0 40px #13a822, 0 0 50px #13a822;
+}
+
+
+
+
+.btn-delete-task {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #282828;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #b0110e, 0 0 30px #b0110e, 0 0 40px #b0110e;
+    text-shadow: 0 0 10px #b0110e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-delete-task i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-delete-task:hover i {
+    transform: scale(1.2);
+}
+
+.btn-delete-task:hover {
+    box-shadow: 0 0 30px #b0110e, 0 0 40px #b0110e, 0 0 50px #b0110e;
+}
+
+
