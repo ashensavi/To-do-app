@@ -42,24 +42,25 @@ body{
     position: relative;
     top: 10%;
     background-color: black;
+    display: flex;
+    align-items: center;
 }
 .task{
     width: 300px;
     position: relative;
     left: 4%;
-    bottom: 4%;
+    /* bottom: 4%; */
 
 }
 .task-description{
     position: relative;
-    margin-top: 2%;
     left: 10%;
  
 }
 .btn-add-task{
     position: relative;
     left: 20%;
-    margin-bottom:4%;
+    
 }
 
 .btn-markasdone{
