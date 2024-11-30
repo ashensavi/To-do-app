@@ -35,7 +35,7 @@ function displayTasks(){
  
     let taskBody = `
         <div class="col">
-            <div class="card" style="width: 25rem;">
+            <div class="card" style="width: 18rem;">
                 <div class="card-body bg-black text-white">
                     <h5 class="card-title">${taskObj.taskName}</h5>
                     <p class="card-text">${taskObj.description}</p>
