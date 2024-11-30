@@ -26,6 +26,7 @@ function handleAddTask() {
    
   
 }
+
 function displayTasks(){
 
     let taskRow = document.getElementById('row-task');
@@ -47,6 +48,8 @@ function displayTasks(){
                          <div class="col">
                         <button class="btn-delete-task btn btn-danger" onclick="deleteTask(${index})">Delete Task</button>
                         </div>
+                        <audio src="audio/added-task.mp3" autoplay></audio>
+                        
                     </div>
                 </div>
             </div>
@@ -59,8 +62,18 @@ function displayTasks(){
 }
 
 function deleteTask(index) {
+    let taskRow = document.getElementById('row-task');
+    taskRow.innerHTML = "";
+
     taskArr.splice(index, 1);
     displayTasks(); 
+
+    let taskDeleted = `
+     <audio src="audio/deleted.mp3" autoplay></audio>
+    `;
+    taskRow.innerHTML+=taskDeleted;
+
+   
 }
    
 
